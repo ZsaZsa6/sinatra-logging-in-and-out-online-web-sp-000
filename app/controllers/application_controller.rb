@@ -16,6 +16,8 @@ class ApplicationController < Sinatra::Base
       session[:user_id] = @user.id
       redirect to '/account'
       # "Welcome, <%=@user.username%>!"
+    end
+      redirect erb :error
 
     end
 
@@ -23,8 +25,10 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-    if 
-
+    if self.is_logged_in? == false
+      redirect erb :error
+    end
+    # if self.is_logged_in? == true
   end
 
   get '/logout' do
