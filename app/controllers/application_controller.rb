@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
       # "Welcome, <%=@user.username%>!"
     end
       redirect erb :error
-
+    end
     end
 
 
