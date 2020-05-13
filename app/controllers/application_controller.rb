@@ -16,7 +16,7 @@ class ApplicationController < Sinatra::Base
       index[:user_id] = @user.id
       redirect '/account'
     end
-    
+    redirect
 
   end
 
