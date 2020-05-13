@@ -2,5 +2,5 @@ class Helpers
 
   def self.current_user
   end
-  def self.logged_in
+  def self.is_logged_in
 end
