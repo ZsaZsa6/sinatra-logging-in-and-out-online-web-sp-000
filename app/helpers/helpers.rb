@@ -4,6 +4,8 @@ class Helpers
    session[:user_id]
   end
   def self.is_logged_in?(session)
-    if username
+    # if username
+
   end
+end
 end
