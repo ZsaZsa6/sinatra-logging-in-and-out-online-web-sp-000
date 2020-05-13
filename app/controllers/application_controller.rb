@@ -18,7 +18,7 @@ class ApplicationController < Sinatra::Base
       # "Welcome, <%=@user.username%>!"
     end
       redirect erb :error
-    end
+
     end
 
 
@@ -29,7 +29,7 @@ class ApplicationController < Sinatra::Base
       redirect erb :error
     end
     # if self.is_logged_in? == true
-  end
+  
 
   get '/logout' do
 
